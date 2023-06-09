@@ -1,11 +1,10 @@
-<h1 align="center">⚡️ Federage </h1>
-<h3 align="center">Réseau économique coopératif pour les entreprises et les organisations</h3>
+<h1 align="center"> Federage ⚡️ </h1>
 
 <br />
-<br />
 
-![screenshots](https://github.com/Federage-Capital/federage/blob/service-explications.png)
+![screenshots](https://github.com/Federage-Capital/federage/blob/main/service-explications.png)
 
+### ⚙️ Outils logiciels
 Répertoire de l'application web [www.federage.com](https://www.federage.com), développée avec [NextJS](https://nextjs.org), [Vercel](https://vercel.com/), [Tailwind UI](https://tailwindui.com) et [Drupal](https://www.drupal.fr).
 Le prototype graphique est accessible sur [Figma](https://www.figma.com/file/FFzOOljdqiP0m87N3M63Um/%E2%82%A3---Pages-d'application-05_06_23?type=design&t=SaUKlItFMk17KPmg-6).
 
@@ -87,7 +86,7 @@ $ npm i storybook
 
 <br />
 
-## 🗣 Traductions
+### 🗣 Traductions
 
 Vous pouvez nous aider à traduire l'application avec notre outil en ligne [POEditor](https://poeditor.com/join/project/q1pgSpLjPn). Toute aide est appréciée et aucune compétence en codage n'est nécessaire 🤗
 
@@ -98,8 +97,7 @@ PS : n'utilisez pas les traductions envoyées par Google translate ou DeepL.
 
 ### ❤️ Contribuer
 
-Jetez un coup d'œil à [contribuer.md] https://github.com/Federage-Capital/federage/
-blob/contribuer.md) si vous voulez contribuer !
+Jetez un coup d'œil à [contribuer.md](https://github.com/Federage-Capital/federage/blob/contribuer.md) si vous voulez contribuer !
 
 <br />
 
