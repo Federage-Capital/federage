@@ -35,7 +35,7 @@ $ npm run start
 
 ### 🧑‍💻 Development
 
-- Typescript est utilisé dans le projet pour la vérification des types de variable et doit être configuré dans votre [éditeur] (https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
+- Typescript est utilisé dans le projet pour la vérification des types de variable et doit être configuré dans votre [éditeur](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
 - Eslint est utilisé dans le projet pour renforcer le style du code et doit être configuré dans votre [editeur](https://eslint.org/docs/latest/use/integrations).
 
