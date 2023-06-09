@@ -1,3 +1,4 @@
-# federage
+<h1 align="center">⚡️ federage.com </h1>
+<h3 align="center">Réseau économique coopératif pour les entreprises et les organisations</h3>
 
-Federage construit un réseau économique coopératif pour les entreprises et les organisations. Financez vos opérations, intégrez des partenaires, libérez de la valeur
+<br />
