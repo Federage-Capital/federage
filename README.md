@@ -5,14 +5,14 @@
 ![screenshots](https://github.com/Federage-Capital/federage/blob/main/service-explications.png)
 
 ### ⚙️ Outils logiciels
-Répertoire de l'application web [www.federage.com](https://www.federage.com), développée avec [NextJS](https://nextjs.org), [Vercel](https://vercel.com/), [Tailwind UI](https://tailwindui.com) et [Drupal](https://www.drupal.fr).
+Répertoire de l'application web [www.federage.com](https://www.federage.com) développée avec [NextJS](https://nextjs.org), [Vercel](https://vercel.com/), [Tailwind UI](https://tailwindui.com) et [Drupal](https://www.drupal.fr).
 Le prototype graphique est accessible sur [Figma](https://www.figma.com/file/FFzOOljdqiP0m87N3M63Um/%E2%82%A3---Pages-d'application-05_06_23?type=design&t=SaUKlItFMk17KPmg-6).
 
 <br />
 
 ### 📊 Source de données
 
-L'enregistrement de votre structure s'effectue via les données publiques détenues par l’administration sur une entreprise, une association ou une administration via [L'Annuaire des Entreprises](https://annuaire-entreprises.data.gouv.fr). Vous pouvez connaitre le statut des API utilisées sur la [Plateforme ouverte des données publiques françaises](https://annuaire-entreprises.data.gouv.fr/donnees/api).
+L'enregistrement de votre structure s'effectue depuis les données publiques détenues par l’administration sur une entreprise ou une association via [L'Annuaire des Entreprises](https://annuaire-entreprises.data.gouv.fr). Vous pouvez connaitre le statut des API utilisées depuis la [Plateforme ouverte des données publiques françaises](https://annuaire-entreprises.data.gouv.fr/donnees/api).
 
 <br />
 
@@ -35,9 +35,9 @@ $ npm run start
 
 ### 🧑‍💻 Développement
 
-- Typescript est utilisé dans le projet pour la vérification des types de variable et doit être configuré dans votre [éditeur](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
+- Typescript est utilisé pour la vérification des types de variable et doit être configuré dans votre [éditeur](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
-- Eslint est utilisé dans le projet pour renforcer le [style du code](https://eslint.org/docs/latest/use/integrations).
+- Eslint sert à renforcer le [style du code](https://eslint.org/docs/latest/use/integrations).
 
 Vous pouvez le vérifier manuellement en exécutant la commande :
 
@@ -62,13 +62,13 @@ Utilisez la commande suivante pour exécuter des tests unitaires :
 $ npm test
 ```
 
-Pour mettre à jour les tests unitaires, procédez comme suit
+Pour mettre à jour les tests unitaires, procédez comme suit :
 
 ```bash
 $ npm run test:unit
 ```
 
-Use the following to run unit tests in watch mode while developing:
+Afin d'exécuter les tests unitaires en mode veille :
 
 ```bash
 $ npm run test:unit --watch
@@ -97,7 +97,7 @@ PS : n'utilisez pas les traductions envoyées par Google translate ou DeepL.
 
 ### ❤️ Contribuer
 
-Jetez un coup d'œil à [contribuer.md](https://github.com/Federage-Capital/federage/blob/contribuer.md) pour contribuer !
+Jetez un coup d'œil à [contribuer.md](https://github.com/Federage-Capital/federage/blob/contribuer.md) être partie prenante !
 
 <br />
 
