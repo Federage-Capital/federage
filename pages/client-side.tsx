@@ -1,0 +1,115 @@
+import * as React from "react"
+import { GetStaticPropsResult } from "next"
+import Head from "next/head"
+import Link from "next/link"
+import { getResourceCollection, DrupalTaxonomyTerm } from "next-drupal"
+import { useForm } from "react-hook-form"
+import * as yup from "yup"
+import { yupResolver } from "@hookform/resolvers/yup"
+import { contactFormSchema } from "../validations/create_account"
+
+type FormData = yup.TypeOf<typeof contactFormSchema>
+
+interface WebformPageProps {
+  teams: DrupalTaxonomyTerm[]
+}
+
+export default function WebformPage({ teams }: WebformPageProps) {
+  const [status, setStatus] = React.useState<"error" | "success">()
+  const { register, handleSubmit, formState, reset } = useForm<FormData>({
+    resolver: yupResolver(contactFormSchema),
+  })
+
+  // This makes a client side POST to our Drupal site.
+  // The Drupal base URL and the webform_id are exposed.
+  async function onSubmit(data: FormData) {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_DRUPAL_BASE_URL}/webform_rest/submit`,
+      {
+        method: "POST",
+        body: JSON.stringify({
+          webform_id: "create_account",
+          ...data,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
+
+    if (response.ok) {
+      reset()
+      return setStatus("success")
+    }
+
+    return setStatus("error")
+  }
+
+  return (
+    <>
+      <Head>
+        <title>Next.js for Drupal | Webform Example</title>
+      </Head>
+      <div className="container max-w-2xl px-6 py-10 mx-auto">
+        <article className="prose lg:prose-xl">
+
+
+          <div className="w-full max-w-md p-6 space-y-4 border rounded-md shadow">
+            {status === "error" ? (
+              <div className="px-4 py-2 text-sm text-red-600 bg-red-100 border-red-200 rounded-md">
+                An error occured. Please try again.
+              </div>
+            ) : null}
+            {status === "success" ? (
+              <div className="px-4 py-2 text-sm text-green-600 bg-green-100 border-green-200 rounded-md">
+                Your message has been sent. Thank you.
+              </div>
+            ) : null}
+            {Object.values(formState.errors)?.length ? (
+              <div className="px-4 py-2 text-sm text-red-600 bg-red-100 border-red-200 rounded-md">
+                {Object.values(formState.errors).map((error, index) => (
+                  <p key={index}>{error.message}</p>
+                ))}
+              </div>
+            ) : null}
+
+            <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+              <div>
+
+              </div>
+              <div>
+
+
+
+
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  className="relative block w-full px-3 py-2 mt-1 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-black focus:border-black focus:z-10 sm:text-sm"
+                  {...register("email")}
+                />
+              </div>
+
+
+              <button
+                type="submit"
+                data-cy="btn-submit"
+                className="flex justify-center px-4 py-2 text-sm font-medium text-white bg-black border border-transparent rounded-md shadow-sm hover:bg-black"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+        </article>
+      </div>
+    </>
+  )
+}
