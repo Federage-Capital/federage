@@ -4,8 +4,7 @@
 <br />
 <br />
 
-![screenshots](https://github.com/Federage-Capital/federage/
-blob/service-explications.png)
+![screenshots](https://github.com/Federage-Capital/federage/blob/service-explications.png)
 
 Répertoire de l'application web [www.federage.com](https://www.federage.com), développée avec [NextJS](https://nextjs.org), [Vercel](https://vercel.com/), [Tailwind UI](https://tailwindui.com) et [Drupal](https://www.drupal.fr).
 Le prototype graphique est accessible sur [Figma](https://www.figma.com/file/FFzOOljdqiP0m87N3M63Um/%E2%82%A3---Pages-d'application-05_06_23?type=design&t=SaUKlItFMk17KPmg-6).
