@@ -33,11 +33,11 @@ $ npm run start
 
 <br />
 
-### 🧑‍💻 Development
+### 🧑‍💻 Développement
 
 - Typescript est utilisé dans le projet pour la vérification des types de variable et doit être configuré dans votre [éditeur](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
-- Eslint est utilisé dans le projet pour renforcer le style du code et doit être configuré dans votre [editeur](https://eslint.org/docs/latest/use/integrations).
+- Eslint est utilisé dans le projet pour renforcer le [style du code](https://eslint.org/docs/latest/use/integrations).
 
 Vous pouvez le vérifier manuellement en exécutant la commande :
 
@@ -97,7 +97,7 @@ PS : n'utilisez pas les traductions envoyées par Google translate ou DeepL.
 
 ### ❤️ Contribuer
 
-Jetez un coup d'œil à [contribuer.md](https://github.com/Federage-Capital/federage/blob/contribuer.md) si vous voulez contribuer !
+Jetez un coup d'œil à [contribuer.md](https://github.com/Federage-Capital/federage/blob/contribuer.md) pour contribuer !
 
 <br />
 
